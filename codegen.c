@@ -1586,8 +1586,13 @@ void codegen(Obj *prog, FILE *out) {
   output_file = out;
 
   File **files = get_input_files();
+#if 1
+  // this emits dwarf-2 references to .debug_info, using .loc
   for (int i = 0; files[i]; i++)
     println("  .file %d \"%s\"", files[i]->file_no, files[i]->name);
+#else
+  println("  .file \"%s\"", files[0]->name);
+#endif
 
   assign_lvar_offsets(prog);
   emit_data(prog);
