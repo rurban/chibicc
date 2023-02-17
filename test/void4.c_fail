@@ -1,0 +1,9 @@
+// Return non-void type expression in a void type function.
+void foo() {
+  return 1;
+}
+
+
+int main() {
+  return 1;
+}

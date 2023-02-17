@@ -1,0 +1,8 @@
+// Return nothing in a non-void type function.
+int bar() {
+  return;
+}
+
+int main() {
+  return 1;
+}

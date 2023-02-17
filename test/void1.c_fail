@@ -1,0 +1,7 @@
+// Assigning expression with void type.
+void foo() {}
+void bar() {int x = foo();}
+
+int main() {
+  return 1;
+}

@@ -7,4 +7,5 @@
 /thirdparty
 /chibicc
 /test/*.exe
+/test/*.fail
 /stage2
